@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    float 사용시 부모 높이 값 상실
+    1.부모에 height;
+    2.부모에 over-flow:hidden;
+    3.부모에 class 이름을 clearfix지정
+    clearfix::before,
+    clearfix::after {
+        content:"";
+        display:block;
+    }
+    cleafix::after {
+        clear:both;
+    }
+    <div>
+        1.position
+        2.float-자식에게 속성을 준다
+        3.flex-부모에게준다
+        4.grid-부모에게준다
+</body>
+</html>
